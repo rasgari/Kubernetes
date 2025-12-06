@@ -1,2 +1,0 @@
-# kub course
-
