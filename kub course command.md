@@ -1092,7 +1092,82 @@ job ===>>>  یه کاری یه بار انجام بدی میندازی تو جا
 ```
 
 ```
+2 workload , 2 kind ===>>> configmap - secret
+```
 
+```
+secret = فقط موقع ریستارت شدن برنامه بهش inject میشه  ===>>> base 64
+```
+
+```
+password database ===>>>  توی کد نباشه
+```
+
+```
+env ===>>> environment
+```
+
+```
+abstration  ===>>> انتزاعی
+```
+
+```
+type namespace ===>>> dev, staging, prod 
+```
+
+```
+role base access control ( RBAC )
+```
+
+```
+kubectl get nodes
+```
+
+```
+kubectl get ns
+```
+
+```
+init container ===>>> app container
+```
+
+```
+PDB ===>>> pod disruption budget
+```
+
+```
+restart policy ===>>> always , never , on failure
+```
+
+```
+deployment ===>>>  replicaset ===>>> pod
+```
+
+```
+orphane ===>>> research
+مالک پاک کن ولی بچه ها رو پاک نکن - فقط ownerrefrence رو از روشون بردار
+```
+
+```
+kublet GC ===>>> روی هر نود داریم 
+```
+
+```
+3 type probes ===>>> liveness , readines , startup
+```
+
+```
+liveness ===>>>  کی آماده بکار است
+readiness ===>>> ترافیک دریافت می کند
+startup ===>>> خود خوان
+```
+
+```
+emptydir  ===>>> research
+```
+
+```
+limit , resources ===>>> container , deployment  وجود داشته باشه
 ```
 
 
