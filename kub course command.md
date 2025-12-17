@@ -319,6 +319,13 @@ sudo setcap cap-net-rax.ep /bin/ping
 sudo getcap /usr/bin/ping
 ```
 
+```
+kublet ===>>> restart ===>>> pod نمیشه restart
+```
+
+```
+containerd ===>>> containerd -shim ===>>> your -app
+```
 
 
 ---
@@ -374,6 +381,10 @@ CPU ===>>> 2 version ===>>> cgroups1, cgroups2
 ```
 
 ```
+
+```
+
+```
 یک پروسه فضای ایزوله شده است
 ```
 
@@ -383,6 +394,22 @@ executable : قابل اجراست : پروسه یه برنامه در حال ا
 
 ```
 computer: disk,memory, cpu
+```
+
+```
+image pull
+```
+
+```
+کانتینر دی روی نود node  به صورت دیمن daemon نصب میشود، ایمیج pull میکنه
+```
+
+```
+snapshot ===>>> mount layered ===>>> rootfs views 
+```
+
+```
+tasks ===>>> create start, stop, kill, observe
 ```
 
 ```
@@ -480,6 +507,17 @@ netfilter ===>>> packet filter ===>>> postrouting
 ```
 netfilter ===>>> iptables, IPVS , connectraction , NFtables
 ```
+
+```
+contianerd ===>>> pull - image - snapshot - tasks
+```
+
+```
+contianerd به صورت daemon روی node نصب میشود
+```
+
+
+
 ---
 
 ---
@@ -559,3 +597,18 @@ linux  capabilities ===>>> DECSECOPS ===>>> پینگ بندی
 ```
 seccomp filtering ===>>> system call
 ```
+
+```
+compare daemon to service 
+```
+
+```
+= دیمن بهش بگی میاد بالا
+دیمن یه پروسس بک گراند
+service  توسط دیمن ارائه میشه
+سرویس خودش دیمن راه میندازه
+```
+
+
+
+
