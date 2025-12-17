@@ -119,6 +119,101 @@ sudo lsns ===>>> لیست namespace
 ```
 
 
+```
+sudo ls /proc/l/ns
+```
+
+
+```
+sudo unshare -p -f -u -n -m --mount -proc bash
+```
+
+
+```
+sudo unshare -p -f --mount -proc bash
+```
+
+```
+sudo unshare -pid --fork /bin/bash
+```
+
+```
+unshare --help
+```
+
+```
+systemd
+```
+
+```
+ip a
+```
+
+```
+ps
+```
+
+```
+ps aux
+```
+
+```
+sleep 100&
+```
+
+```
+hostname dibaro
+```
+
+```
+hostname new
+```
+
+
+```
+sudo lsns | grep  unshare
+```
+
+```
+mount --bind /tmp/mnt
+```
+
+```
+telnet google.com 80
+```
+
+```
+telnet localhost 80
+```
+
+```
+nsenter -target pid --net  ===>>> tshoot
+```
+
+```
+ipnetns,
+pid ایزوله نیست 
+به unshare نگفتیم pid ایزوله کنه
+```
+
+```
+docker exec -it mycluster
+```
+
+```
+docker logs
+```
+
+```
+docker exec
+```
+
+
+```
+nsenter ===>>> runc, crictl ===>>> tools
+```
+
+
 ---
 # description
 
@@ -142,6 +237,10 @@ master blain :
 tools, docker, swarm, network, linux
 ```
 
+```
+کانتینر چیست؟ پروسه ای است که با استفاده از namespace و cgroup محدود سازی شدند
+```
+
 
 ```
 یک پروسه فضای ایزوله شده است
@@ -161,6 +260,9 @@ memory: سخت افزاری
 cpu: پردازش و محاسبات
 ```
 
+```
+unreachable ===>>> کارت شبکه درست تعریف نشده
+```
 
 ```
 عیب یابی = دانستن + چک لیست
@@ -205,5 +307,9 @@ nginx
 ```
 
 ```
+bind
+```
 
+```
+youtube ===>>> techworldwithnana
 ```
