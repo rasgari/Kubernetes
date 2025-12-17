@@ -68,6 +68,24 @@ free -h
 htop ===>>> F5
 ```
 
+```
+strace ===>>> system call interface
+```
+
+```
+sudo strace ls
+```
+
+```
+/proc = لیست پروسه ها
+```
+
+
+
+```
+
+```
+
 ---
 # description
 
@@ -91,6 +109,14 @@ computer: disk,memory, cpu
 disk: برنامه در رِم لود میشه، حافظه موقت
 memory: سخت افزاری
 cpu: پردازش و محاسبات
+
+```
+عیب یابی = دانستن + چک لیست
+```
+
+```
+kernel ===>>> user space + kernel space
+```
 
 ```
 پروسه ها همزمان اجرا می شوند که میشه threads
