@@ -696,6 +696,144 @@ contianerd ===>>> pull - image - snapshot - tasks
 contianerd به صورت daemon روی node نصب میشود
 ```
 
+```
+kubernetes universe
+```
+
+```
+flow ===>>> container ===>>> یک فضای ایزوله شده که پروسه داخلش
+```
+
+```
+container runtime 
+```
+
+```
+systemd-cgls
+```
+
+```
+pod کوچکترین
+```
+
+```
+pod ===>>> multi container  ===>>> storage , network   داخل پاد شیر کنند===>>> deploy
+```
+
+```
+netns
+```
+
+```
+kubectl ===>>> ls /usr/local/bin 
+```
+
+```
+tools ===>>> kubeseal, helm, cursor, helm, kind, kor, velero
+```
+
+```
+compare yml, json, yaml
+```
+
+```
+kubernetes ===>>> docs, cluster
+```
+
+
+```
+apiversion: v1
+kind: pod
+metadata:
+name: nginx
+
+spec:
+containers:
+- name: nginx
+- image: nginx:1.14.2
+- ports:
+  - containerport: 80
+```
+
+```
+ip pod ثابت نیست
+```
+
+```
+statefull  تغییر پذیر
+```
+
+```
+12factor micro service
+```
+
+```
+12factor.net
+```
+
+```
+cloud native
+```
+
+```
+state full & state less
+```
+
+```
+replicaset ===>>> manifest
+```
+
+```
+65000 port
+```
+
+```
+source ip , destination port ===>>> range 10
+```
+
+```
+kubectl get no
+```
+
+```
+kubectl get po -A
+```
+
+```
+pod ===>>> one ip ===>>> containerd
+```
+
+```
+kubectl apply -f pod-sample.yml
+```
+
+```
+kubectl get pod -o wide
+```
+
+```
+kubectl get pod
+```
+
+```
+kubectl delete pod nginx
+```
+
+```
+kubectl ===>>> یک باینری user/local  وجود دارد
+```
+
+```
+kubeconfig
+```
+
+```
+kubectl create -f pod-sample.yaml
+```
+
+```
+kubectl apply -f pod-sample.yaml
+```
 
 
 ---
