@@ -319,9 +319,7 @@ sudo setcap cap-net-rax.ep /bin/ping
 sudo getcap /usr/bin/ping
 ```
 
-```
-kublet ===>>> restart ===>>> pod نمیشه restart
-```
+
 
 ```
 containerd ===>>> containerd -shim ===>>> your -app
@@ -341,8 +339,10 @@ pid (1) ===>>> init  ===>>> همه چی در لینوکس فایل است
 ```
 namespace : PID,  cgroup, time, user, mount, network, UTS, IPC
 ```
-فضای مختلف گنجانده می شود
 
+```
+فضای مختلف گنجانده می شود
+```
 
 
 ```
@@ -429,6 +429,186 @@ unreachable ===>>> کارت شبکه درست تعریف نشده
 ```
 kernel ===>>> user space + kernel space
 ```
+
+```
+kublet ===>>> restart ===>>> pod نمیشه restart
+```
+
+```
+kuberneties تک node اجرا میشه
+```
+
+```
+continerd-shim ===>>> bridge to runc & process handling
+```
+
+```
+runc ===>>> execution flow & OCI bundle usage
+```
+
+```
+config.json , rootfs
+```
+
+```
+CRI 7 kubelet ===>>> interaction model & responsiblities 
+```
+
+```
+container runtime ( execution ) 
+```
+
+```
+logs/exec/attach
+```
+
+```
+OCI spec ===>>> config.json
+```
+
+
+```
+process, root, mounts, linux, 
+```
+
+```
+daemon model & PID 1 behavior
+```
+
+```
+PID 1 ===>>> child  به وجود بیاره - از بین نره  ===>>> zombie process
+```
+
+
+```
+node os & systemd  ===>>> kubelet    گزارش داده میشه - تصمیم گیرنده ، مدیریت میکنه  ===>>> containerd کارمند - انجام دهنده کار
+```
+
+
+```
+CRI  مختلف داریم ===>>> کانتینر اجرا میکنه - همه چیز در کوبلت ببینی
+```
+
+```
+SUPERVISES ===>>> restart on failure
+```
+
+```
+desired state ===>>> controller ( kubelet ) 
+current state ( node & runtime ) observe
+```
+
+```
+کوبرنتیز ===>>> مفهوم پاد ===>>> چند پروسه در چندتا namespace  قرار میگیره
+```
+
+```
+در پاد چندتا کانتینر بسازیم ===>>> 
+```
+
+```
+pod sandbox  ===>>> app1, app2 ===>>> executable
+```
+
+```
+pause container & pod sandbox ===>>> restart ===>>> pid  عوض میشه
+```
+
+```
+parent ===>>> containerd-shim
+```
+
+```
+pod namespace ===>>> owner
+```
+
+```
+pstree -p id
+```
+
+```
+containerd ===>>> log  نگه میداره
+containerd_shim ===>>> log  نگه نمیداره
+logs  توی varkubelet 
+```
+
+```
+pod sand box ایزوله شن name space
+```
+
+```
+termination ===>>> sigterm ===>>> sigkill & prestop
+```
+
+```
+container process ===>>> runc ===>>> containerd-shim ===>>> containerd ===>>> CRI API ===>>> kubelet
+```
+
+```
+خود داکر داره از containerd داره استفاده میکنه
+```
+
+```
+image روی node ===>>> download
+```
+
+```
+pod ===>>> namespace share
+```
+
+```
+containerd ===>>> image pull
+```
+
+```
+image pull ===>>> همه روی node  ورکر داشته باشی
+```
+
+```
+CRI , CTL
+```
+
+```
+k3s.io
+```
+
+```
+کوبرنتیز تک نود
+```
+
+
+
+```
+namespace, cgroup, pod
+```
+
+```
+kind, minikube ===>>> k3s ===>>> cluster
+```
+
+```
+kube spray داوپس هابیز
+```
+
+```
+kubernetes.io
+```
+
+```
+notebookllm
+```
+
+```
+news.ycombinator.com
+```
+
+```
+kubectl getpod -n kube-system
+```
+
+
+
+
 
 ```
 پروسه ها همزمان اجرا می شوند که میشه threads
