@@ -252,6 +252,75 @@ pstree -p 13404
 yes > /dev/null ===>>> چاپ خالی
 ```
 
+```
+ls /boot
+```
+
+```
+ls /proc
+```
+
+
+```
+sudo iptables -l
+```
+
+
+```
+sudo iptables -l -n -v  ===>>>  چه رول هایی وجود دارد
+```
+
+```
+sudo nft list tables 
+```
+
+```
+ipt
+```
+
+```
+netfilter ===>>> firewalls
+```
+
+```
+sudo ufw status
+```
+
+```
+sudo iptables -F
+```
+
+```
+IPVS ===>>> iptables رول های دسترسی  ===>>> حاج غلامعلی
+```
+
+```
+curl -I google.com
+```
+
+```
+sudo conntrack -l
+```
+
+
+```
+ipgenetrator ===>>> SNAT, DNAT
+```
+
+```
+sudo capsh
+```
+
+```
+sudo setcap cap-net-rax.ep /bin/ping
+```
+
+```
+sudo getcap /usr/bin/ping
+```
+
+
+
 ---
 
 ---
@@ -347,6 +416,43 @@ cat /proc
 ```
 
 ```
+type mount ===>>>
+shard دیفالت
+private کاملا ایزوله
+slive از والد ارث میگیره
+```
+
+```
+network ===>>> NAT ===>>> network addres translication ===>>> ترجمه ای پی
+```
+
+```
+SNAT ===>>> source network addres translication
+```
+
+
+```
+contrainerd ابزار  ===>>> architechture & components
+```
+
+```
+کانتینر یه پروسه است که ایزوله شده
+```
+
+```
+runtime ===>>> containerd ===>>> content store - metadata store - snapshotter - task service
+```
+
+
+```
+CRI = container  runtime interface
+```
+
+```
+DNAT ===>>> destination network addres translication
+```
+
+```
 file system =  قوانین قرار گرفتن فایل ها در کنار هم هستند
 ```
 
@@ -361,6 +467,20 @@ inherits: ارث بری
 ```
 current ===>>> الان استفاده میکنه
 ```
+
+```
+شبکه =  arrival , prerouting , routing , input / forward
+```
+
+```
+netfilter ===>>> packet filter ===>>> postrouting
+```
+
+
+```
+netfilter ===>>> iptables, IPVS , connectraction , NFtables
+```
+---
 
 ---
 
@@ -398,4 +518,44 @@ SWAP ===>>> حافظه مجازی
 
 ```
 cgroup
+```
+
+```
+rootfs
+```
+
+```
+bootfs
+```
+
+```
+image alpine
+```
+
+```
+image ubuntu
+```
+
+```
+7 layer OSI
+```
+
+```
+packet filtering & network tools
+```
+
+```
+chain مختلف
+```
+
+```
+مرتضی باشلیز ===>>> sudolearn  ===>>> iptables ===>>> youtube
+```
+
+```
+linux  capabilities ===>>> DECSECOPS ===>>> پینگ بندی
+```
+
+```
+seccomp filtering ===>>> system call
 ```
