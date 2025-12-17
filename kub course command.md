@@ -835,7 +835,92 @@ kubectl create -f pod-sample.yaml
 kubectl apply -f pod-sample.yaml
 ```
 
+```
+kubectl get pod nginx -o yaml
+```
 
+```
+kind: pod
+```
+
+```
+annotations ===>>> توضیحات - حاشیه نویسی
+```
+
+```
+kubectl delete -f
+```
+
+```
+pod ===>>> replicaset تعریف نشده ===>>> self link نداره
+```
+
+```
+label ===>>> برچسب workload
+```
+
+```
+spec:
+replicas: 3
+selector:
+matchlabels:
+app:nginx
+
+template:
+metadata:
+labels:
+app:nginx
+spec:
+containers
+- name: nginx
+- image: nginx:1.14.2
+ports:
+- containerports: 80
+```
+
+```
+kind: deployment
+```
+
+```
+kubectl apply -f
+```
+
+```
+deploy-nginx.yaml  ===>>> name, ready, status, restart, age
+```
+
+```
+tools ===>>> k9s
+```
+
+```
+probes ( L:R:S )
+```
+
+```
+self link ===>>>  قابلیت به این صورت که اگر 3تا replica داشتیم - بعد ازاینکه حذف کنی دوباره خودش ایجاد کنه
+```
+
+```
+3pod ===>>> service
+```
+
+```
+kubectl apply -f deploy-nginx.yaml
+```
+
+```
+kubectl getpod -o wide
+```
+
+```
+age , ip , node  خودش میسازه
+```
+
+```
+
+```
 ---
 
 ---
