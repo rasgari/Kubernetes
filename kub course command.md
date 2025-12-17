@@ -213,6 +213,17 @@ docker exec
 nsenter ===>>> runc, crictl ===>>> tools
 ```
 
+```
+ls / sys/fs/cgroup/   ===>>>file system
+```
+
+```
+ls /proc ===>>> پروسه proc
+```
+
+```
+systemd -cgls ===>>> لیست cgroup 
+```
 
 ---
 
@@ -263,6 +274,10 @@ cgroup in action ===>>> CPU limits(timebase) , memory safety , I/O control
 ```
 
 ```
+CPU ===>>> 2 version ===>>> cgroups1, cgroups2
+```
+
+```
 یک پروسه فضای ایزوله شده است
 ```
 
@@ -305,7 +320,7 @@ inherits: ارث بری
 ```
 
 ```
-
+current ===>>> الان استفاده میکنه
 ```
 
 ---
@@ -336,4 +351,12 @@ youtube ===>>> techworldwithnana
 
 ```
 alocate
+```
+
+```
+SWAP ===>>> حافظه مجازی
+```
+
+```
+cgroup
 ```
