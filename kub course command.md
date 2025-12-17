@@ -66,7 +66,7 @@ free -h
 
 
 ---
-
+# description
 
 ```
 master blain :
@@ -102,3 +102,23 @@ inherits: ارث بری
 
 ```
 
+---
+
+# research
+
+```
+orphan , zombie  ===>>> cpu کند میشه  ===>>> crash میشه
+```
+
+```
+zombie :  پروسه تموم
+```
+
+
+```
+
+```
+
+```
+
+```
