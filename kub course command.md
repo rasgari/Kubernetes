@@ -919,8 +919,157 @@ age , ip , node  خودش میسازه
 ```
 
 ```
+kubectl rollout restart deployment nginx-deploy  ===>>> باعث میشه range ip در  pod ها تغییر کنه
+```
 
 ```
+نحوه لود بالانس قابل تنظیم نیست ===>>> با iptables خود کوبرنتیز هندل میکنه
+```
+
+```
+endpoint , endpoint slice  سرویس اندپوینت میسازه
+```
+
+```
+kubectl apply -f simple-svc.yaml
+```
+
+```
+kubectl get pod ===>>>  اطلاعات پادها
+```
+
+```
+همه چیز در لینوکس فایل است
+```
+
+```
+اندپوینت ها روی هر نود node نگهداری میشوند
+```
+
+```
+port :  آن چیزی که به سرویس میرسد
+```
+
+```
+targer port ===>>> پورت پاد
+```
+
+```
+پادها از بین میرن و به وجود میان ===>>> نیاز به kind جدید داریم
+```
+
+```
+پادها با سرویس صحبت کنند ===>>>  cluster بشن
+```
+
+```
+cluster ip ===>>>  قرار پادها باهم در ارتباط باشند
+```
+
+```
+type spec ===>>> cluster ip, node port , loadbalancer, external name ,headless
+```
+
+```
+65553 - 0 ===>>> 30000 - 32767 kubernetes
+```
+
+```
+kubctl get svc  ===>>> CIDR
+```
+
+```
+node port ===>>> type قرار میدی
+```
+
+```
+چندتا service میتونی داشته باشی که selector یکی هست
+```
+
+```
+nmaespace  نام مختلف داشته باشه
+```
+
+```
+pending ===>>> در انتظار
+```
+
+```
+cluster ip ===>>> coredns ثبت میشه
+```
+
+```
+30000 - 32000 allocate
+```
+
+```
+k3s
+```
+
+```
+kubectl با چی کار میکنه ===>>> kube config
+```
+
+```
+kubectl  get node
+```
+
+```
+kubectl get pod -n kube-system
+```
+
+```
+netstat -nltp ===>>> portward
+```
+
+```
+ss -ntpl | grep 31440
+```
+
+```
+kubctl delete -f deploy-nginx
+```
+
+```
+loadbalancer خودش cluster ip  داره ===>>> node port باز میکنه
+```
+
+```
+externalname service
+```
+
+```
+cast.ai
+```
+
+```
+headless ===>>> no cluster IP  خودش ای پی نمیگیره
+```
+
+```
+kubectl logs ===>>>  لاگ میده
+```
+
+```
+kubectl describe ===>>> اطلاعات پاد میده
+```
+
+```
+metallb ===>>> ip بده ===>>> loadbalance کنه  ===>>> two type ===>>> BGP layer 3 &  4
+```
+
+```
+volume ===>>> دیتا در فضای persistant  بماند
+```
+
+```
+
+```
+
+
+
+
+
 ---
 
 ---
