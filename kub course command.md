@@ -215,6 +215,9 @@ nsenter ===>>> runc, crictl ===>>> tools
 
 
 ---
+
+---
+
 # description
 
 ```
@@ -241,6 +244,23 @@ tools, docker, swarm, network, linux
 کانتینر چیست؟ پروسه ای است که با استفاده از namespace و cgroup محدود سازی شدند
 ```
 
+
+```
+cgroups ===>>> for resourcecontrol
+```
+
+```
+CPU control ===>>> I/O control ===>>> disk
+
+network control
+
+memory control
+
+```
+
+```
+cgroup in action ===>>> CPU limits(timebase) , memory safety , I/O control
+```
 
 ```
 یک پروسه فضای ایزوله شده است
@@ -312,4 +332,8 @@ bind
 
 ```
 youtube ===>>> techworldwithnana
+```
+
+```
+alocate
 ```
