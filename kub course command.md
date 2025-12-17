@@ -64,6 +64,9 @@ htop
 free -h
 ```
 
+```
+htop ===>>> F5
+```
 
 ---
 # description
@@ -111,12 +114,13 @@ orphan , zombie  ===>>> cpu کند میشه  ===>>> crash میشه
 ```
 
 ```
-zombie :  پروسه تموم
+zombie :  پروسه تموم شده ولی  orphan هنوز داره کار میکنه
+و هردوتاشون والد parent ندارند
 ```
 
 
 ```
-
+nginx 
 ```
 
 ```
