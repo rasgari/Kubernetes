@@ -41,7 +41,7 @@ pstree
 
 
 ```
-kill -9
+kill -s9
 ```
 
 ```
@@ -77,17 +77,65 @@ sudo strace ls
 ```
 
 ```
+ls /proc
+```
+
+```
 /proc = لیست پروسه ها
 ```
 
 
 
 ```
+cat /proc/self/status
+```
 
 ```
+/sys  ===>>> file system
+```
+
+```
+cat /usr/bin/cat
+```
+
+```
+pstree
+```
+
+```
+unshare
+```
+
+```
+pstree -p
+```
+
+```
+bash, /bin/bash
+```
+
+```
+sudo lsns ===>>> لیست namespace
+```
+
 
 ---
 # description
+
+```
+pid (1) ===>>> init  ===>>> همه چی در لینوکس فایل است
+```
+
+```
+namespace : PID,  cgroup, time, user, mount, network, UTS, IPC
+```
+فضای مختلف گنجانده می شود
+
+
+
+```
+ppid دارند ===>>> orphan
+```
 
 ```
 master blain :
@@ -106,9 +154,13 @@ executable : قابل اجراست : پروسه یه برنامه در حال ا
 ```
 computer: disk,memory, cpu
 ```
+
+```
 disk: برنامه در رِم لود میشه، حافظه موقت
 memory: سخت افزاری
 cpu: پردازش و محاسبات
+```
+
 
 ```
 عیب یابی = دانستن + چک لیست
