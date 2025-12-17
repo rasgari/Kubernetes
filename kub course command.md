@@ -225,6 +225,33 @@ ls /proc ===>>> پروسه proc
 systemd -cgls ===>>> لیست cgroup 
 ```
 
+
+```
+lsmem
+```
+
+
+```
+id
+```
+
+```
+htop
+```
+
+```
+sudo mkdir my container  ===>>> cd /sys/fs/cgroup ===>>> این کانتینر پیش فرض cgroup میسازه
+```
+
+```
+pstree -p 13404
+```
+
+
+```
+yes > /dev/null ===>>> چاپ خالی
+```
+
 ---
 
 ---
@@ -309,6 +336,18 @@ kernel ===>>> user space + kernel space
 
 ```
 پروسه ها همزمان اجرا می شوند که میشه threads
+```
+
+```
+slice, scope طبقه بندی
+```
+
+```
+cat /proc
+```
+
+```
+file system =  قوانین قرار گرفتن فایل ها در کنار هم هستند
 ```
 
 ```
