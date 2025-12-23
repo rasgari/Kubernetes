@@ -1243,6 +1243,63 @@ scop ===>>> پردازشی که مدیریت کانتینر نتیجه می رس
 slice , scop ===>>> شبیه cgroup عمل میکنه برای تقسیم بندی منابع کوبرنتیز
 ```
 
+```
+kubectl describe pod nginx-deployment
+```
+
+```
+sudo vim /sys/fs/cgroup/kubepods.slice
+```
+
+
+```
+/besteffor ===>>> بیشترین مقدار ممکن از منابع
+```
+
+```
+kubectl delete -f deployment-nginx.yaml
+```
+
+```
+kubectl delete svc
+```
+
+```
+guaranteed ===>>> بالاترین اولویت ===>>> burstable ===>>> besteffor پایین ترین اولویت
+```
+
+```
+container ===>>> containerd
+```
+
+```
+multi node ===>>> docker swarm , kubernetes
+```
+
+```
+replica ===>>> orkristrator
+```
+
+```
+منابع داریم ===>>> namespace , cgroup محدود کنیم
+```
+
+```
+kubeletmanager ===>>> master, workload
+```
+
+
+```
+research ===>>> condition , annotation, image kubelet, component kubernetes
+```
+
+```
+compare ===>>> drain, cordon
+```
+
+```
+
+```
 ---
 
 
