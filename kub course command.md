@@ -1170,11 +1170,81 @@ emptydir  ===>>> research
 limit , resources ===>>> container , deployment  وجود داشته باشه
 ```
 
+```
+pod های موقتی ===>>> OSI ===>>> destination IP , source IP
+```
+
+```
+loadbalancer ===>>>
+اگر ip یه چیزی رد شد، بالا بیاد
+```
+
+```
+kubctl ===>>> cube confing وصل میشه
+```
+
+```
+log monitoring ===>>> log stash ===>>> std out
+```
 
 
+```
+event ===>>> iptables, DNAT, cluster
+```
 
+```
+k3s ===>>> systemd ===>>> sudo systemctl status k3s.services
+```
+
+```
+kubctl ===>>> به عنوان باینری ===>>> kubctl get node
+```
+
+```
+netstat
+```
+
+```
+nltp
+```
+
+```
+nltp | grep 8443
+```
+
+```
+ls /etc ===>>> تنظیمات مربوط به کانفیگ
+```
+
+
+```
+ls /etc/rancher/k3s/k3s.yaml ===>>> vim
+```
+
+
+```
+research ===>>> CA , rootCA, apiversion
+```
+
+
+```
+systemd-cgls ===>>> اسلایس و اسکوپ ببینید
+```
+
+```
+slice ===>>> برای گروه بندی لینوکس یه سری اسکریپت داره، مستقیم پردازشی انجام نمیده، خودش پروسه خاصی نداره، cgroup زیر مجموعه
+```
+
+```
+scop ===>>> پردازشی که مدیریت کانتینر نتیجه می رسند , runtime
+```
+
+```
+slice , scop ===>>> شبیه cgroup عمل میکنه برای تقسیم بندی منابع کوبرنتیز
+```
 
 ---
+
 
 ---
 
