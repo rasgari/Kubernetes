@@ -1281,6 +1281,36 @@ replica ===>>> orkristrator
 ```
 
 ```
+describe  اطلاعات همه
+```
+
+```
+export kubeconfig ===>>> ~/config
+```
+
+```
+focker.ir/nginx
+```
+
+```
+kubectl logs nginx
+```
+
+```
+compare ===>>> label ===>  yaml, انتخاب ===>>> annotation ===> json, برای همه برنامه توضیحات داره
+```
+
+```
+indent ===>>> دندانه ===>>> yaml to json تبدیل
+```
+
+```
+kubectl get pods -l app=nginx
+```
+
+
+
+```
 منابع داریم ===>>> namespace , cgroup محدود کنیم
 ```
 
@@ -1298,8 +1328,25 @@ compare ===>>> drain, cordon
 ```
 
 ```
+spec : specification
+replica: 2
+ spec:
+ containers:nginx:1.14.2
+```
 
 ```
+sudo crictl images
+```
+
+```
+kubectl grt pod -w
+```
+
+```
+kubectl rollout deployment ===>>> restart 
+```
+
+
 ---
 
 
