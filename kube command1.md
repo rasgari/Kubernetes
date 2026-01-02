@@ -119,5 +119,17 @@ uname -a
 ```
 
 ```
-usr/bin
-```/containerd/containerd-shim
+usr/bin/containerd/containerd-shim
+```
+
+```
+ls -a
+```
+
+```
+etc/passwd
+```
+
+```
+ps aux  | grep containerd
+```
