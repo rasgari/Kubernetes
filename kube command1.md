@@ -117,3 +117,7 @@ yum update -y
 ```
 uname -a
 ```
+
+```
+usr/bin
+```/containerd/containerd-shim
