@@ -355,6 +355,163 @@ kubectl get pod -A ===>>> تمام pod ها
 ```
 
 ```
+kubectl describe -n kube-system pod metrics --
+```
+
+```
+kubectl logs -n kube-system me....
+```
+
+
+```
+kubectl apply -f deploy-nginx.yaml ===>>> create
+```
+
+```
+kubectl delete -f deploy-nginx.yaml ===>>> delete
+```
+
+```
+netstat -nltup | grep 304
+```
+
+```
+cni, kubelet ===>>> research
+```
+
+```
+kubectl get pod
+```
+
+```
+kubectl get svc -o wide ===>>> sourceip, destination ip
+```
+
+```
+svc ===>>> فضای abreaction, abstration
+```
+
+```
+docker ===>>> single node , kubernetes ===>>> multi node or worker
+```
+
+```
+node worker ===>> kubelet, kubeproxy  , node master
+```
+
+```
+pod up , service up
+```
+
+```
+kubectl rollout restart
+```
+
+```
+kubectl exec -it ping
+```
+
+```
+service controller
+```
+
+```
+API server
+```
+
+```
+the tools for the jobs: netfilter & iptables
+```
+
+```
+kube-services باید bind بشه hook forward
+```
+
+```
+through kubernetes chains
+```
+
+```
+sudo iptables -L ===>>> list all
+```
+
+```
+kube-services all --anywhere
+```
+
+```
+chain kube-services
+```
+
+```
+DNAT ===>>> rewrite destination to pod,IP & target port
+```
+
+```
+Hairpin NAT ===>>> plugin ===>>> research
+```
+
+```
+conntrack ===>>> connection tracking
+```
+
+```
+masquerd ===>>> research
+```
+
+```
+kubectl describe SVC nginx-lb
+```
+
+```
+sudo iptables -t nat -L kube-services -n -v
+```
+
+```
+kubectl get svc -o wide
+```
+
+```
+portainer.io
+```
+
+```
+3 type plain ===>>> dataplain, control plain , worker plain ===>>> pod
+```
+
+```
+worker ===>>> proxy, kubelet
+```
+
+```
+kubectl get pod ===>>> list pod
+```
+
+```
+database ===>>> etcd ===>>> حافظه کوبرنتیز brain kubernetes
+```
+
+```
+etcd به عنوان pod بالا نیارید
+```
+
+```
+etcd ===>> external , kuber ==>>>json
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
+
+```
 
 ```
 
