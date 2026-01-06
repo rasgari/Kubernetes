@@ -297,60 +297,61 @@ kubectl rollout deployment ===>>> restart
 
 
 ```
-
+apiversion: kind  ===>>> deployment ===>>> apps
+expose ===>>> port هاست ===>>> port کانتینر
 ```
 
 ```
-
+namespace kuber ===>>> system
 ```
 
 
 ```
-
+kubectl run --rm -it tester --image=archlinux --namespace=mynsbash
 ```
 
 ```
-
+garbage culctor ===>>> final culctor
 ```
 
 ```
-
+nodeport= 30,000 & 32,000 ===>>> datacenter config
 ```
 
 ```
-
+cordines ===>>> تغییر بدی ===>>> pod بالا بیاری
 ```
 
 ```
-
+هر چیزی در کوبرنتیز ===>>> configurable
 ```
 
 ```
-
+kube-proxy ===>>> the magic behind kubernetes services
 ```
 
 ```
-
+export kubeconfig=~/config
 ```
 
 ```
-
+kubectl get nodes
 ```
 
 ```
-
+kubectl describe ===>>> trouble shooting
 ```
 
 ```
-
+kubectl get all -n default ===>>> تمام کوبر میاره
 ```
 
 ```
-
+name 4 ===>>> pod/service/deployment.apps/replicaset.apps
 ```
 
 ```
-
+kubectl get pod -A ===>>> تمام pod ها
 ```
 
 ```
