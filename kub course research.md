@@ -194,5 +194,112 @@ kubectl delete -f deploy-nginx.yaml
 ```
 
 ```
+kubectl delete svc
+```
+
+```
+guaranteed  ===>>> بالاترین اولویت  ===>>> burstable  ,  besteffor ===>>> پایین ترین اولویت
+```
+
+```
+container ===>>> containerd ===>>> run اجرا میکنه
+```
+
+```
+multi node ===>>> docker swarm , kubernetes
+```
+
+```
+replica ===>>> orkristrator
+```
+
+```
+روی node ===>>> درست نیست container ===>>> اجرا کنیم
+access, memory, burstable
+منابع داریم ===>>>  namespace , cgroup محدود کنیم
+```
+
+```
+CRI , kubelet , process بیافته ===>>> shim
+```
+
+```
+component kubernetes ===>>> 6 or 7 component
+```
+
+```
+kubeletmanager ===>>> master, workload
+```
+
+```
+image kubelet
+```
+
+```
+conditions , annotation ===>>> research
+```
+
+```
+host port:0/TCP
+```
+
+```
+اطلاعات همه describe
+```
+
+```
+export kubeconfig=~/config
+focker.ir/nginx
+```
+
+
+```
+kubectl logs nginx
+```
+
+
+```
+compare ===>>> lable ===>>> yaml , annotation ===>>> json
+at yaml میشود json  استفاده کرد
+```
+
+
+```
+kubectl get pods -l app=nginx
+```
+
+```
+ingress ===>>> age, service
+```
+
+```
+concept ===>>> kube-proxy
+```
+
+```
+spec:
+  replica:2
+  spec:
+    containers:nginx 1,14,2
+```
+
+```
+sudo crictl images
+```
+
+```
+kubectl get pod -w
+```
+
+```
+kubectl rollout deployment ===>>> restart
+```
+
+
+```
+
+```
+
+```
 
 ```
