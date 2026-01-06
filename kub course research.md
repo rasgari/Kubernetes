@@ -107,10 +107,13 @@ compare ===>>> drain, cordon
 
 ---
 
+
 ```
 pod موقتی ها ===>>> OSI ===>>> destination IP, dstination port , source IP , source port
 اگر قرار به pod ترافیکی برسه
 باید ip, port  اون pod داشته باشیم
+```
+
 ```
 load balance  اگر ip یه چیزی رد بشه ، بالا بیاد
 ```
@@ -160,32 +163,35 @@ systemd-cgls ===>>> اسلایس و اسکوپ ببینی
 ```
 
 ```
-slice ===>>> برای گروه بندی لینوکس یه سری اسکو
+slice ===>>> برای گروه بندی لینوکس یه سری اسکوپ داره، مستقیم پردازشی انجام نمیده - خودش پروسه خاصی نداره cgroup زیرمجموعه
+شبیه cgroup عمل میکنه برای تقسیم بندی منابع کاربر
+slice ===>>> kubepods
+max slice parent
 ```
 
 ```
-
+scop ===>>> runtime ===>>>  پردازشی که مدیریت کانتینر نتیجه میرسد
 ```
 
 ```
-
+limit , resource ===>>> limit ===>>> max  - resource ===>>> min
 ```
 
 ```
-
+kubectl describe pod nginx --deployment
 ```
 
 ```
-
+sudo vim /sys/fs/cgroup/kubepods.slice  ===>>> besteffor بیشترین مقدار ممکن از منابع
 ```
 
 ```
-
-
+compare ===>>> drain . cordon
 ```
 
 ```
-
+kubectl delete -f deploy-nginx.yaml
+```
 
 ```
 
