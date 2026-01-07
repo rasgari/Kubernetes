@@ -559,139 +559,163 @@ rc2.d
 ```
 
 ```
-
+تنظیمات کوبرنتیز ===>>>
+ls /etc/kubernetes
+color blue ===>>> pki, ssl, manifest
 ```
 
 ```
-
+ls /etc/kubernetes/ssl & /pki  ===>>> incription
 ```
 
 ```
-
+cd /etc/ssl/etcd
 ```
 
 ```
-
+apiserver 
 ```
 
 ```
-
+tools etcdctl ===>>> install
 ```
 
 ```
-
+etcdctl status ===>>> status cluster
 ```
 
 ```
-
+quorum زیاد میشه
+حداکثر 7 نود ===>>> 3 یا 5  نود
+فرآیند تصمیم گیری طولانی میشه، کند میشه، performance  پایین میاد، latency بالا میره
+5 تا نود ===>>> 2تا از دست بدید
+7 تا نود ===>>> 3تا از دست بدید
 ```
 
 ```
-
+folder ssl ===>>> ca, key, pem
 ```
 
 ```
-
+etcdctl endpoint status --write-out==table  --endpoints=hhtps://127.0.0.1:2777
 ```
 
 ```
-
+etcdctl endpoint status --cluster --write-out=table
 ```
 
 ```
-
+hostname -i
 ```
 
 ```
-
+etcdctl member list --write-out=table
 ```
 
 ```
-
+deployment, nginx, backup===>>> snapshot
 ```
 
 ```
-
+etcdctl endpoint status --cluster
+start to https
+connection to TLS
 ```
 
 ```
-
+dfrage , dfragement ===>>> research
 ```
 
 ```
-
+timeline ===>>> backup ===>>> apiserver , cluster ===>>> down 
 ```
 
 ```
-
+kubespray , from scratch
 ```
 
 ```
-
+mijer ===>>> zero down time
 ```
 
 ```
-
+master node ===>>>  تک به تک update میشه
 ```
 
 ```
-
+sigs kuber ===>>> research
 ```
 
 ```
-
+sigs kuberspray ===>>> research
 ```
 
 ```
-
+systemd install
 ```
 
 ```
-
+the API server: the cluster hub
 ```
 
 ```
-
+kube-apiserver ===>>> kubectl, kubelet, controller manager, scheduller, static pod
 ```
 
 ```
-
+restful API ===>>> crud ===>>> create, read, update, delete, patch
 ```
 
 ```
-
+get ===>>> read,
+post ===>>> create,
+patch ===>>> patch,
+put ===>>> update,
+delete ===>>> delete
 ```
 
 ```
+apiversion : apps/v1
+kind: deployment
+spec:
+replicas:3
 
+kubernetes ===>>> api/v1 ===>>> pod,service,nodes
 ```
 
 ```
-
+new kube ===>>> apis ===>>> apps /v1 , deployment
+                     ===>>> batch/v1 , jobs
+                     ===>>> networking.k8s.io/v1 , ingresses
 ```
 
 ```
-
+apis/group/version
 ```
 
 ```
-
+versioning strategy & stability
 ```
 
 ```
-
+v1alpha1,v1beta1,v1
 ```
 
 ```
-
+GVK ===>>> group version kind
+GVR ===>>> group version resource
+apis/apps/v1/namespaces/{{ns}/deployment
+one kubelet run
 ```
 
 ```
-
+etcd.yaml, kube.apiserver.yaml ===>>> kubelet
 ```
 
 ```
-
+ls /etc/kubernetes/manifests/static
+component master manifests
+kube-apiserver, kube-controller-manager/  , kube-scheduler.yaml
 ```
 
 ```
