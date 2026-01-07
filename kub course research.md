@@ -751,91 +751,98 @@ change ===>>> apiserver پایین میاری ===>> control manager
 ```
 
 ```
-kube-api
+kube-apiserver ===>>> پایین میاری ===>>> از دسترس خارج میکنی
 ```
 
 ```
-
+the request lifecycle: the handler chain
 ```
 
 ```
-
+http request ===>>> authentication , authorization , admission control , validation schemacheecla
 ```
 
 ```
-
+TLS configuration & certificates
 ```
 
 ```
-
+authentication ===>>> احراز هویت بشی
+jst, webhook, OIDC token
 ```
 
 ```
-
+authorization ( authz ) ===>>> اجازه دسترسی داری؟ ===>>> RBAC
+بر اساس نقشی که ائن فرد داره اجازه دسترسی به ساختمان میده که وارد طبقه 2 بشی
 ```
 
 ```
-
+authorization ( RBAC ) ===>>> role-based access control
+get,list,watch,pod
 ```
 
 ```
-
+role ===>>> bind کنی
 ```
 
 ```
-
+audit ===>>> research
+audit logging  ===>>> research
 ```
 
 ```
-
+admission controllers ===>> gatekeepers
 ```
 
 ```
-
+important ===>>> label, resource, limit
 ```
 
 ```
-
+policy ===>>> enforce
 ```
 
 ```
-
+kubectl ===>>> patch
 ```
 
 ```
-
+admission-webhooks ===>>>
+validation & schema enforcement
+===>>> structure , openAPI schema, immutable fieldcheck
 ```
 
 ```
-
+refactor ===>>> تصحیح یا بهبود - اصول رعایت نکرده باشه
 ```
 
 ```
-
+kubectl watch, controller, scheduler
 ```
 
 ```
-
+kube-apiserver ( watch cache,deserialization, cache )
 ```
 
 ```
-
+kubernetes ===>>> eventbase ===>> watch
 ```
 
 ```
-
+CRD ( custom resource definitions ) ===>>> api-version, 23  ===>>> api-resource, 77
 ```
 
 ```
-
+CRD ===>>> update کنی ===>>> delete
+API server scurity best pratices
 ```
 
 ```
-
+base64 ===>>> research
 ```
 
 ```
-
+kubectl apply -f pod.yaml
 ```
 
 ```
